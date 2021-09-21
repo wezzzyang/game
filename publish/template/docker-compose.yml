@@ -1,0 +1,11 @@
+version: '3'
+services:
+  ${DOCKER_CONTAINER_NAME}:
+    image: ${_DOCKER_IMAGE_}
+    container_name: ${DOCKER_CONTAINER_NAME}
+    restart: always
+    tty: true
+    volumes:
+      - ${JENKINS_REMOTE_DIR}/${PROJECT_NAME}:${_DOCKER_WORKDIR_}
+    ports:
+      - "${DOCKER_EXPORT_PORT}:${_DOCKER_NGINX_PORT_}"

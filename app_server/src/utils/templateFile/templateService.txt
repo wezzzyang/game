@@ -1,0 +1,15 @@
+import { Provide } from '@midwayjs/decorator';
+import { BaseService } from '../lib/baseService';
+import { ${className} } from '../entity/${fileName}';
+import { InjectEntityModel } from '@midwayjs/orm';
+import { Repository } from 'typeorm';
+
+@Provide()
+export class ${className}Service extends BaseService<${className}> {
+  constructor() {
+    super(${className});
+  }
+
+  @InjectEntityModel(${className})
+  userModel: Repository<${className}>;
+}

@@ -1,0 +1,19 @@
+{
+  "extends": "./node_modules/mwts/",
+  "ignorePatterns": [
+    "node_modules",
+    "dist",
+    "test",
+    "jest.config.js",
+    "typings"
+  ],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "react-native/no-inline-styles": 0,
+    "end_of_line": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["off"]
+  }
+}

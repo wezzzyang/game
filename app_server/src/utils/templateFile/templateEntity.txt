@@ -1,0 +1,7 @@
+import { EntityModel } from '@midwayjs/orm';
+import { Column, PrimaryGeneratedColumn } from 'typeorm';
+
+@EntityModel('${tableName}')
+export class ${className} {
+  ${entitys}
+}

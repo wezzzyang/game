@@ -1,0 +1,23 @@
+{
+  "easycom": {
+    "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [{
+    "path": "pages/game/game",
+    "style": {
+      "navigationBarTitleText": "五子棋",
+      "navigationBarBackgroundColor": "white"
+    }
+  }, {
+    "path": "pages/game/room",
+    "style": {
+      "navigationBarTitleText": "五子棋",
+      "navigationBarBackgroundColor": "white"
+    }
+  }],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}
